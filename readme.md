@@ -13,7 +13,7 @@ Models are initialized from XCLIU/2_rectified_flow_from_sd_1_5, finrtuned on pic
 
 We provided weights trained by 1000 steps, (more steps please wait)
 
-[Download model weights (Google Drive)](https://drive.google.com/file/d/abcdefghijklmn/view?usp=sharing)
+[Download model weights (Google Drive)](https://drive.google.com/drive/folders/1FSNbVMXbwSKaRvBLVIjyUGLtCPSJUPX8?usp=drive_link)
 
 
 ### Training
