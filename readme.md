@@ -29,7 +29,8 @@ You can refer to /code/pipeline_rf.py for further detials.
 Adding var during infer most times generate similar images. But sometimes it can improve image quality
 | RectifiedFlow                    | RectifiedFlowWithVar                 |
 |:-------------------------:|:-------------------------:|
-| ![RectifiedFlow ](./image-demo/rfpipe.png.png) | ![RectifiedFlowWithVar](./image-demo/rfvpipe.png.png) |
+| ![RectifiedFlow ](./image-demo/rfpipe.png) | ![RectifiedFlowWithVar](./image-demo/rfvpipe.png) |
+| ![RectifiedFlow ](./image-demo/rfpipe2.png) | ![RectifiedFlowWithVar](./image-demo/rfvpipe2.png) |
 
 ```python
 from code.pipeline_rf import RectifiedFlowPipelineWithVar, RectifiedFlowPipeline
