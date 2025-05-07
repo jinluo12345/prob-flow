@@ -6,6 +6,15 @@ This will automically download pickapick-v1 data. You can also change the data t
 ```bash
 python download.py 
 ```
+### Download weights
+Weight are provided at Google drive
+
+Models are initialized from XCLIU/2_rectified_flow_from_sd_1_5, finrtuned on pickapick-v1 with batch size 48 (6 per gpu).
+
+We provided weights trained by 1000 steps, (more steps please wait)
+
+[Download model weights (Google Drive)](https://drive.google.com/file/d/abcdefghijklmn/view?usp=sharing)
+
 
 ### Training
 ```bash
@@ -16,6 +25,12 @@ you can change the model or data to be used in the config.
 ### Inference
 Here,unet path is the newly trained model. The pipeline is the most importtant as it generates images. RectifiedFlowPipelineWithVar samples v_pred using distribution and uses var predicted. While RectifiedFlowPipeline only uses mu predicted as v pred.
 You can refer to /code/pipeline_rf.py for further detials.
+
+Adding var during infer most times generate similar images. But sometimes it can improve image quality
+| RectifiedFlow                    | RectifiedFlowWithVar                 |
+|:-------------------------:|:-------------------------:|
+| ![RectifiedFlow ](./image-demo/rfpipe.png.png) | ![RectifiedFlowWithVar](./image-demo/rfvpipe.png.png) |
+
 ```python
 from code.pipeline_rf import RectifiedFlowPipelineWithVar, RectifiedFlowPipeline
 import torch
