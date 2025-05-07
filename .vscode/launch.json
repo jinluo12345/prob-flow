@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: train_text_to_image.py",
+        "type": "python",
+        "request": "launch",
+        "program": "/remote-home1/lzjjin/project/InstaFlow/train_text_to_image.py",
+        "args": [
+          "--config",
+          "config/base.yaml",
+          "--local_rank",
+          "0"
+        ],
+        "python": "/remote-home1/lzjjin/anaconda3/envs/flow/bin/python",
+        "cwd": "/remote-home1/lzjjin/project/InstaFlow",
+        "env": {
+          "PYTHONPATH": "/remote-home1/lzjjin/project/InstaFlow"
+        },
+        "console": "integratedTerminal",
+        "envFile": "${workspaceFolder}/.env",
+        "debugOptions": [
+          "RedirectOutput"
+        ]
+      }
+    ]
+  }
+  

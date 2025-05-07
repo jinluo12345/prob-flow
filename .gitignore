@@ -1,0 +1,10 @@
+./COCO2017
+./flow-model-finetuned-pickapic-base   
+./flow-model-finetuned-pickapic-lambdavar
+./outputs
+./outputs_sm
+COCO2017/*
+flow-model-finetuned-pickapic-base/*   
+flow-model-finetuned-pickapic-lambdavar/*
+outputs/*
+outputs_sm/*
